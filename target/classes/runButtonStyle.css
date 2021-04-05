@@ -1,0 +1,8 @@
+#runButton {
+    -fx-background-radius: 100; -fx-pref-height: 51; -fx-pref-width: 220; -fx-background-color:  #F25B49; -fx-effect: dropshadow(three-pass-box, rgba(242, 91, 73, 0.5), 100, 0, 0, 0);
+}
+
+#serverChooserButton {
+    -fx-background-color: radial-gradient(radius 180%, rgba(68, 70, 76, 255), rgba(21, 21, 25, 0));
+    -fx-background-radius: 10;
+}
