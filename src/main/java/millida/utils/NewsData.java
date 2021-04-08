@@ -10,9 +10,11 @@ public class NewsData {
     @FXML public Label title;
     @FXML public Label content;
     @FXML public AnchorPane mainPane;
+
     public NewsData(String title1, String content1){
         setup(title1, content1);
     }
+
     @FXML
     public void initialize(){
         title.setText(title1);

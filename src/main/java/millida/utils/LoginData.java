@@ -68,7 +68,7 @@ public final class LoginData {
             if(!Boolean.parseBoolean(root.get("is_active").toString())){
                 return null;
             }
-            return new LoginData(token, root.get("id").toString(), root.get("email").toString(),
+            return new LoginData(token, root.get("uuid").toString(), root.get("email").toString(),
                     root.get("username").toString(),
                     ((JSONObject)root.get("skin")).get("skin_head").toString(),
                     Float.parseFloat(root.get("balance").toString()),
