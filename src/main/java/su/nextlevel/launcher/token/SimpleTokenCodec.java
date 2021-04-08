@@ -32,6 +32,8 @@ public class SimpleTokenCodec implements TokenCodec {
 
     @Override
     public String fromCoded(String token) {
+        if (token.isEmpty() || !token.contains("~")) return "";
+        
         String[] splited = token.split("~");
         StringBuilder stringToken = new StringBuilder();
         for (String string : splited)
