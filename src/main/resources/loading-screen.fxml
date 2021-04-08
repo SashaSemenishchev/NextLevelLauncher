@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="292.0" prefWidth="249.0" style="-fx-background-color: #1D1F26;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="su.nextlevel.launcher.LoadingScreenController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="25.0" layoutY="23.0">
+         <image>
+            <Image url="@BigLogo.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="progressBar" layoutX="25.0" layoutY="239.0" prefWidth="200.0" />
+      <Label fx:id="nowAction" layoutX="45.0" layoutY="214.0" text="Загрузка обновлений" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

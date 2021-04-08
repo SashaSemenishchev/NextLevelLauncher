@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="587.0" prefWidth="932.0" style="-fx-background-radius: 100px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="su.nextlevel.launcher.Controller">
+   <children>
+      <ImageView fx:id="background" fitHeight="594.0" fitWidth="969.0" layoutX="-10.0" layoutY="-3.0">
+         <image>
+            <Image url="@background.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="33.0" layoutY="35.0">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerHead" fitHeight="47.0" fitWidth="47.0" layoutX="52.0" layoutY="502.0" pickOnBounds="true" preserveRatio="true" />
+      <ChoiceBox fx:id="serverChooserButton" layoutX="592.0" layoutY="505.0" prefHeight="47.0" prefWidth="150.0" stylesheets="@runButtonStyle.css" />
+      <Button fx:id="runButton" layoutX="713.0" layoutY="503.0" maxHeight="52.0" maxWidth="221.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="220.0" stylesheets="@runButtonStyle.css" text="Присоединиться" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Montserrat ExtraBold" size="17.0" />
+         </font></Button>
+      <HBox fx:id="hbox" alignment="CENTER_RIGHT" layoutX="-2.0" prefHeight="41.0" prefWidth="952.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="minimizeButton" fitWidth="12.0">
+               <image>
+                  <Image url="@minus.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="closeButton">
+               <image>
+                  <Image url="@x.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="playerNameLabel" layoutX="122.0" layoutY="500.0" prefHeight="25.0" prefWidth="194.0" text="Playername" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="playTime" layoutX="122.0" layoutY="526.0" prefHeight="25.0" prefWidth="148.0" text="Всего в игре:" textFill="#ffffff58">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="playTime" layoutX="241.0" layoutY="526.0" prefHeight="25.0" prefWidth="100.0" textFill="#ffffff58">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="settingsButton" layoutX="27.0" layoutY="520.0">
+         <image>
+            <Image url="@settings.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_LEFT" layoutX="39.0" layoutY="98.0" prefHeight="17.0" prefWidth="186.0" style="-fx-font-weight: 900;" text="Новости" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Regular" size="19.0" />
+         </font>
+      </Label>
+      <ListView fx:id="newsList" editable="true" layoutX="41.0" layoutY="144.0" prefHeight="337.0" prefWidth="307.0" style="-fx-background-color: transparent;" />
+      <Label fx:id="launchStatus" alignment="TOP_CENTER" layoutX="648.0" layoutY="481.0" prefHeight="23.0" prefWidth="307.0" text="Индексирование" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Regular" size="18.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="701.0" layoutY="511.0" prefWidth="200.0" />
+      <Pane fx:id="settingsPane" layoutX="295.0" layoutY="69.0" prefHeight="391.0" prefWidth="554.0" style="-fx-background-color: rgba(53, 53, 53, 0.3);">
+         <children>
+            <TextField fx:id="clientDirectory" layoutX="34.0" layoutY="46.0" prefHeight="25.0" prefWidth="176.0" promptText="Директория клиента" />
+            <Button fx:id="moveDirectoryButton" layoutX="308.0" layoutY="46.0" mnemonicParsing="false" text="Применить" />
+            <TextField fx:id="ramArgument" layoutX="34.0" layoutY="121.0" prefHeight="25.0" prefWidth="176.0" promptText="Введите в формате 4G или 512M" text="2G" />
+            <Label layoutX="34.0" layoutY="93.0" prefHeight="21.0" prefWidth="47.0" text="RAM" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Regular" size="16.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="logoutButton" layoutX="403.0" layoutY="352.0" text="Выйти из аккаунта" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="221.0" layoutY="127.0" text="Рекомендованое значение 2G" textFill="#3c3c3c">
+               <font>
+                  <Font name="Montserrat Regular" size="11.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="closeButton1" layoutX="524.0" layoutY="14.0">
+               <image>
+                  <Image url="@x.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="clientDirectoryChooseButton" layoutX="219.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Обзор" />
+            <Button fx:id="reloadClientButton" layoutX="34.0" layoutY="340.0" mnemonicParsing="false" text="Переустановить клиент" />
+            <Label layoutX="179.0" layoutY="319.0" prefHeight="68.0" prefWidth="137.0" text="* Ваши ресурспаки, настройки и прочее не исчезнут" textAlignment="RIGHT" textFill="#7c7c7c" wrapText="true">
+               <font>
+                  <Font name="Montserrat Regular" size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="164.0" text="Моды" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="196.0" text="Coming soon..." />
+         </children>
+      </Pane>
+      <ListView fx:id="newsList" layoutX="71.0" layoutY="136.0" prefHeight="337.0" prefWidth="285.0" style="-fx-background-color: transparent;" />
+      <Label fx:id="versionLabel" layoutX="5.0" layoutY="564.0" text="master/7f451gh ©Millida Studio 2020-2021" textFill="#3c3c3c">
+         <font>
+            <Font name="Montserrat Regular" size="10.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="profileLink" layoutX="651.0" layoutY="20.0" text="Личный кабинет" textFill="WHITE">
+         <font>
+            <Font name="Montserrat ExtraBold" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="profileLink1" layoutX="810.0" layoutY="20.0" text="Помощь" textFill="WHITE">
+         <font>
+            <Font name="Montserrat ExtraBold" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Label fx:id="serverChooserLabel" alignment="TOP_CENTER" layoutX="604.0" layoutY="521.0" prefHeight="15.0" prefWidth="94.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <ListView fx:id="newsListView" layoutX="41.0" layoutY="142.0" prefHeight="315.0" prefWidth="254.0" />
+<!--      <Slider fx:id="ramSlider" layoutX="75.0" layoutY="461.0" majorTickUnit="0.0" max="2048.0" min="512.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" />-->
+   </children>
+</AnchorPane>
