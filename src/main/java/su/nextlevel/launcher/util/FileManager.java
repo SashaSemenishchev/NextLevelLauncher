@@ -44,7 +44,7 @@ public class FileManager {
             isNew = true;
             if (!directory.mkdirs()) {
                 System.out.println("Cannot create data directory");
-                Alert.AlertType alertAlertType = AlertType.ERROR;
+                AlertType alertAlertType = AlertType.ERROR;
                 Alert alert = new Alert(alertAlertType);
                 alert.setTitle("Ошибка загрузки");
                 alert.setHeaderText(null);

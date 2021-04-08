@@ -156,7 +156,7 @@ public class Controller {
     public static void error(Exception exception) {
         Platform.runLater(() -> {
             exception.printStackTrace();
-            Alert alert = new Alert(Alert.AlertType.ERROR);
+            Alert alert = new Alert(AlertType.ERROR);
             alert.setContentText("Ошибка в исполнении программы");
             alert.setHeaderText(exception + "");
             alert.setTitle("Ошибка");
@@ -167,7 +167,7 @@ public class Controller {
     public static void error(Exception exception, String error) {
         Platform.runLater(() -> {
             exception.printStackTrace();
-            Alert alert = new Alert(Alert.AlertType.ERROR);
+            Alert alert = new Alert(AlertType.ERROR);
             alert.setContentText(error);
             alert.setHeaderText(exception + "");
             alert.setTitle("Ошибка");
@@ -178,7 +178,7 @@ public class Controller {
     public static void fatalError(Exception exception) {
         Platform.runLater(() -> {
             exception.printStackTrace();
-            Alert alert = new Alert(Alert.AlertType.ERROR);
+            Alert alert = new Alert(AlertType.ERROR);
             alert.setContentText("Фатальная ошибка в исполнении программы");
             alert.setHeaderText(exception + "");
             alert.setTitle("Фатальная ошибка");
@@ -476,7 +476,7 @@ public class Controller {
                 error(exception);
                 return;
             }
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            Alert alert = new Alert(AlertType.CONFIRMATION);
             alert.setTitle("Перемещение файлов");
             alert.setHeaderText(null);
             alert.setContentText("Хотите ли вы переместить все ваши файлы в новую директорию?");
@@ -567,7 +567,7 @@ public class Controller {
                         System.out.println(connection.getResponseCode() + " " + connection.getResponseMessage());
                         connection.disconnect();
                         Platform.runLater(() -> {
-                            Alert.AlertType alertAlertType = AlertType.ERROR;
+                            AlertType alertAlertType = AlertType.ERROR;
                             Alert alert = new Alert(alertAlertType);
                             alert.setContentText("Ошибка авторизации! Попробуйте зайти в настройки и нажать выйти");
                             alert.setHeaderText(null);
