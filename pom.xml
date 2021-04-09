@@ -4,7 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+<<<<<<< HEAD
     <groupId>groupId</groupId>
+=======
+    <groupId>su.nextlevel.launcher</groupId>
+>>>>>>> 8c494ef0fba22e530d09c91f8ffa6ec5461b1b91
     <artifactId>NextLevelLauncher</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -38,7 +42,11 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.3</version>
                 <configuration>
+<<<<<<< HEAD
                     <mainClass>millida.Main</mainClass>
+=======
+                    <mainClass>su.nextlevel.launcher.Main</mainClass>
+>>>>>>> 8c494ef0fba22e530d09c91f8ffa6ec5461b1b91
                 </configuration>
             </plugin>
             <plugin>

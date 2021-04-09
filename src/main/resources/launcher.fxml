@@ -15,7 +15,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <AnchorPane fx:id="rootPane" prefHeight="587.0" prefWidth="932.0" style="-fx-background-radius: 100px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="millida.Controller">
+=======
+<AnchorPane fx:id="rootPane" prefHeight="587.0" prefWidth="932.0" style="-fx-background-radius: 100px;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="su.nextlevel.launcher.Controller">
+>>>>>>> 8c494ef0fba22e530d09c91f8ffa6ec5461b1b91
    <children>
       <ImageView fx:id="background" fitHeight="594.0" fitWidth="969.0" layoutX="-10.0" layoutY="-3.0">
          <image>

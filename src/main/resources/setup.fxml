@@ -4,7 +4,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
+<<<<<<< HEAD
 <AnchorPane prefHeight="167.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="millida.SetupController">
+=======
+<AnchorPane prefHeight="167.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="su.nextlevel.launcher.SetupController">
+>>>>>>> 8c494ef0fba22e530d09c91f8ffa6ec5461b1b91
    <children>
       <TextField fx:id="directoryLine" layoutX="31.0" layoutY="52.0" promptText="Директория установки" />
       <Button fx:id="browseButton" layoutX="228.0" layoutY="52.0" mnemonicParsing="false" text="Искать" />

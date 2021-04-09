@@ -7,7 +7,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< HEAD
 <AnchorPane prefHeight="438.0" prefWidth="350.0" style="-fx-background-color: #292C35;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="millida.LoginController">
+=======
+<AnchorPane prefHeight="438.0" prefWidth="350.0" style="-fx-background-color: #292C35;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="su.nextlevel.launcher.login.LoginController">
+>>>>>>> 8c494ef0fba22e530d09c91f8ffa6ec5461b1b91
    <children>
       <PasswordField fx:id="passwordField" layoutX="30.0" layoutY="246.0" prefHeight="42.0" prefWidth="290.0" promptText="Введите пароль" style="-fx-background-color: #373B46;" />
       <TextField fx:id="loginField" layoutX="31.0" layoutY="161.0" prefHeight="42.0" prefWidth="290.0" style="-fx-background-color: #373B46; -fx-text-fill: #FFFFFF;" />
